@@ -10,6 +10,7 @@
 ```
 git clone https://github.com/gavriluk/jenkins-pipeline-workshop
 cd jenkins-pipeline-workshop
+sudo chown 200:200 -R .nexus
 docker-compose up -d
 ```
 Просмотр запущенных контейнеров осуществляется командой
@@ -27,3 +28,5 @@ docker-compose up -d
 :godmode: admin:admin
 
 :hurtrealbad: user:user
+
+Возможно потребуется коррекция сетевых настроек Jenkins'а, т.к. по-умолчанию он привязан не к localhost, а к доменным именам.
