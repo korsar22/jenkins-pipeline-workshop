@@ -23,6 +23,7 @@ services:
 
   nexus:
     image: sonatype/nexus3:3.5.0
+    privileged: true
     volumes:
       - ./.nexus:/nexus-data
     ports:
